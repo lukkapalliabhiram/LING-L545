@@ -13,8 +13,8 @@ A step-by-step guide to implementing the MaxMatch tokenization algorithm, testin
 ### Get the `.conllu` files from GitHub
 
 ```bash
-git clone [GitHub Repository URL]
-cd [Repository Directory]
+git clone https://github.com/UniversalDependencies/UD_Japanese-GSD
+cd UD_Japanese-GSD
 ```
 
 ## Step 2: Extracting a Dictionary of Surface Forms
