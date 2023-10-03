@@ -134,13 +134,44 @@ The following WERs were observed for each sentence in the test file:
 11. 19.05%
 12. 16.96%
 
-### Observations and Insights
+## Performance Description and Examples
 
-- **Variable Performance:** The MaxMatch algorithm demonstrates a range of WERs across different sentences. Several sentences achieved a WER of 0%, indicating perfect matches, while others exhibited higher WER, up to 23.33%.
+In the tokenization task using the MaxMatch algorithm, we observed varied Word Error Rates (WER) across different sentences. A WER of 0% indicates that the reference and hypothesis sentences are identical, while a higher WER indicates discrepancies between them. 
+
+### Observations
+
+- **Perfect Scores:** Several sentences achieved a WER of 0%, implying that the tokenization perfectly matched the reference. Typically, these were simpler sentences like '.'.
+
+- **Variable WER:** The algorithm demonstrated varied WERs across sentences, ranging from 0% to 23.33%.
+
+- **Averaged Performance:** An average WER of approximately 12.22% was observed across all sentences, indicating a moderate level of accuracy.
+
+### Insights
+
+1. **Simpler Sentences:** It was noticed that simpler sentences or sentences with common words tended to have lower WERs.
+   
+2. **Complex Sentences:** Sentences with more complex structures or less common words were more prone to higher WERs.
+
+3. **Punctuation Handling:** The algorithm correctly tokenized punctuation marks, with periods (`.`) often obtaining a 0% WER.
+
+### Examples
+
+- **Example 1:** A sentence with 0% WER.
+  - Reference: `.`
+  - Hypothesis: `.`
+  - WER: `0%`
+  - Note: The sentence is tokenized correctly, matching the reference exactly.
+
+- **Example 2:** A sentence with 23.33% WER.
+  - Reference: `20 マイクロシーベルト と いう この 基準 を 上回り ます 。  長 時間 拘束 さ れ 半 軟禁 状態 の 女性 も い た 。  同 発電 所 は 老朽 化 し た 小 規模 の 発電 所 で 、 警備 は 手薄 だっ た 。  回転 ジェット に よる 体当たり 攻撃 。  屋根 の アンテナ に カラス が 止まっ て いたずら を する し 、 屋根 が 汚れ て こまる から と 、 調査 の 依頼 が あり まし た 。  その カステラ は , 表面 に “ 祝 3`
+  - Hypothesis: `20 マイクロ シ ー ベルト と いう この 基準 を 上回り ます 。 長 時間 拘束 さ れ 半 軟 禁 状態 の 女性 も い た 。 同 発電 所 は 老 朽 化 し た  小 規模 の 発電 所 で 、 警備 は 手薄 だっ た 。 回転 ジェット に よる 体当たり 攻撃 。 屋根 の アンテナ に カラス が 止 まっ て い た ず ら を する し 、  屋根 が 汚れ て こ ま る から と 、 調査 の 依頼 が あり まし た 。 その カ ス テ ラ は , 表面 に “ 祝 3`
+  - WER: `23.33%`
   
-- **Average Performance:** The average WER, considering the provided rates, is approximately 12.22%.
 
-- **Inconsistency:** The inconsistency in WERs suggests that while the algorithm performs well for certain sentences, it may struggle with others, likely due to the complexity or uncommon vocabulary.
+### Conclusion
+
+While MaxMatch performs well on simpler sentences and accurately tokenizes punctuation, its performance can degrade on more complex sentences or those with less common words. The variations in WER across different sentences highlight the importance of refining the algorithm and potentially integrating more context-aware approaches for improved tokenization accuracy.
+
 
 ## Step 7: Conclusion and Future Work
 
