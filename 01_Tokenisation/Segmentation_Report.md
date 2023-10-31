@@ -36,5 +36,3 @@ Despite the segmenter's satisfactory performance on the sample, there are certai
 3. **Over-segmentation**: Emphasized punctuation marks like "..." could lead the segmenter to incorrectly identify multiple sentence boundaries.
 
 ---
-
-This report provides an insight into the segmentation process using the provided sample. For a thorough evaluation and to further refine the segmenter, it would be beneficial to test it on a more extensive and varied dataset.
