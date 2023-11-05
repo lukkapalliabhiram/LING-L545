@@ -10,6 +10,29 @@ This document outlines the process of creating a morphological analysis for 20 b
 
 We used the HFST toolkit to define the morphotactics for Telugu nouns. The lexical entries were specified in a `.lexc` file, which was then compiled into a finite-state transducer. The `.lexc` file defines the nominative and genitive case forms for singular nouns.
 
+### The morphological analysis covered the following 20 nouns in their base (nominative) and possessive (genitive) forms:
+```
+ఇల్లు (illu - house)
+పుస్తకం (pustakam - book)
+కుర్రాడు (kurraadu - boy)
+అమ్మాయి (ammaayi - girl)
+వంటి (vanti - insect)
+చెట్టు (chettu - tree)
+నది (nadi - river)
+కొండ (konda - mountain)
+పట్టణం (pattanam - town)
+కారు (kaaru - car)
+గుర్రం (gurram - horse)
+పని (pani - work)
+పెన్సిల్ (pencil - pencil)
+బల్ల (balla - ball)
+చేప (chepa - fish)
+గుడి (gudi - temple)
+పూవు (poovu - flower)
+ఫలం (phalam - fruit)
+బాట (baata - path)
+చీర (cheera - saree)
+```
 ## Compiling lexicon file
 ```
 hfst-lexc telugu.lexc -o telugu.hfst
