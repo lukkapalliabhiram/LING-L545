@@ -88,11 +88,11 @@ The command should give the following output:
 
 ## FST: 
 ```
-hfst-fst2txt telugu.hfst | python3 att2dot.py  | dot -Tpng -o telugu.lexc.png
+hfst-fst2txt telugu.hfst | python3 att2dot.py  | dot -Tpng -o telugu.png
 ```
 The command should give the following output: 
 
-![FST Output](./telugu.lexc.png)
+![FST Output](./telugu.png)
 
 ## Graph of continuation classes
 
