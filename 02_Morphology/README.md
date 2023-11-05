@@ -24,7 +24,7 @@ hfst-fst2strings telugu.hfst
 ```
 
 The command should give the following output: 
-
+```
 ఇల్లు<noun><singular><nominative>:ఇల్లు
 ఇల్లు<noun><singular><genitive>:ఇల్లును
 ఇల్లు<noun>:ఇల్లుది
@@ -85,7 +85,7 @@ The command should give the following output:
 ఫలం<noun><singular><nominative>:ఫలం
 ఫలం<noun><singular><genitive>:ఫలంను
 ఫలం<noun>:ఫలంది
-
+```
 ## FST: 
 ```
 hfst-fst2txt telugu.hfst | python3 att2dot.py  | dot -Tpng -o telugu.png
