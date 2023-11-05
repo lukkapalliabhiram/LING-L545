@@ -1,0 +1,38 @@
+Multichar_Symbols
+
+%<noun%>
+%<singular%>
+%<plural%>
+%<nominative%>
+%<genitive%>
+
+LEXICON Root
+
+ఇల్లు%<noun%>          :ఇల్లు    NForms ; ! House
+పుస్తకం%<noun%>        :పుస్తకం  NForms ; ! Book
+కుర్రాడు%<noun%>       :కుర్రాడు  NForms ; ! Boy
+అమ్మాయి%<noun%>        :అమ్మాయి  NForms ; ! Girl
+వంటి%<noun%>           :వంటి     NForms ; ! Insect
+చెట్టు%<noun%>          :చెట్టు    NForms ; ! Tree
+నది%<noun%>            :నది      NForms ; ! River
+కొండ%<noun%>           :కొండ      NForms ; ! Mountain
+పట్టణం%<noun%>         :పట్టణం   NForms ; ! Town
+కారు%<noun%>           :కారు     NForms ; ! Car
+గుర్రం%<noun%>          :గుర్రం    NForms ; ! Horse
+పని%<noun%>            :పని      NForms ; ! Work
+పెన్సిల్%<noun%>        :పెన్సిల్  NForms ; ! Pencil
+బల్ల%<noun%>           :బల్ల      NForms ; ! Ball
+చేప%<noun%>            :చేప      NForms ; ! Fish
+గుడి%<noun%>           :గుడి      NForms ; ! Temple
+పూవు%<noun%>           :పూవు     NForms ; ! Flower
+ఫలం%<noun%>            :ఫలం      NForms ; ! Fruit
+బాట%<noun%>            :బాట      NForms ; ! Path
+చీర%<noun%>            :చీర      NForms ; ! Saree
+
+LEXICON NForms
+
+%<singular%>%<nominative%>: # ;      ! Singular Nominative
+%<singular%>%<genitive%>:ను # ;      ! Singular Genitive (for words ending in vowels)
+                           :ది # ;    ! Singular Genitive (for words ending in consonants)
+
+END
