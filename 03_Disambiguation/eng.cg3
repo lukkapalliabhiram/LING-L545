@@ -1,0 +1,27 @@
+DELIMITERS = "." ;
+
+LIST ADP = "in" "of" "at";
+LIST DET = "the";
+LIST NOUN = "start" "century" "majority" "economy";
+LIST VERB_PAST = "worked";
+LIST PROPN = "English";
+LIST COMMON_NOUN = "people" "countryside" "economy";
+LIST FINITE = (VerbForm=Fin);  # Defined the list of finite verbs
+LIST PRON = (PRON);  # Defined the list of pronouns
+
+SECTION
+
+# Rule 1: Remove finite verbs if preceded by 'the'.
+REMOVE FINITE IF (-1C DET);
+
+# Rule 2: Remove adpositions if not followed by a determiner or noun.
+REMOVE ADP IF (NOT 1C DET) (NOT 1C NOUN);
+
+# Rule 3: Remove 'English' as a proper noun if followed by 'people'.
+REMOVE PROPN IF (1C COMMON_NOUN);
+
+# Rule 4: Remove past tense verbs if they do not follow a noun or pronoun.
+REMOVE VERB_PAST IF (NOT -1C NOUN) (NOT -1C PRON);
+
+# Rule 5: Select 'the' as a determiner if followed by a common noun.
+SELECT DET IF (1C COMMON_NOUN);
