@@ -34,8 +34,6 @@ The primary goal of this project was to address the gap in NLP research and appl
 ## Contributions
 This project is open for contributions and suggestions. Feel free to fork the repository, and submit pull requests with your enhancements. For major changes, please open an issue first to discuss what you would like to change.
 
-## License
-[MIT License](LICENSE)
 
 ## Contact
 For any queries or discussions regarding this project, feel free to contact [Abhiram Kukkapalli](kukkapalliabhiram@gmail.com).
