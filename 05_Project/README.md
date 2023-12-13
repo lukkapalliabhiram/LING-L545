@@ -1,13 +1,13 @@
 # Comparative Analysis of Hybrid Recommendation Systems for Telugu News Content
 
 ## Overview
-This repository hosts the complete work of our project on the development and analysis of hybrid recommendation systems, specifically tailored for Telugu language news content. The project integrates Natural Language Processing (NLP) techniques with advanced recommendation algorithms, including content-based filtering, collaborative filtering, and matrix factorization, to enhance the accuracy and relevance of news recommendations.
+This repository hosts the complete work of my project on the development and analysis of hybrid recommendation systems, specifically tailored for Telugu language news content. The project integrates Natural Language Processing (NLP) techniques with advanced recommendation algorithms, including content-based filtering, collaborative filtering, and matrix factorization, to enhance the accuracy and relevance of news recommendations.
 
 The primary goal of this project was to address the gap in NLP research and applications for regional languages, with a focus on Telugu. By employing a combination of different recommendation strategies, we aimed to create a system that not only understands the intricacies of the Telugu language but also aligns with user preferences effectively.
 
 ## Repository Contents
-- `Hybrid_Recommendation_Systems.ipynb`: This Jupyter Notebook contains all the code used for developing, implementing, and evaluating the hybrid recommendation models. It includes data preprocessing, model training, algorithm implementation, and performance evaluation.
-- `Project_Paper.pdf`: A comprehensive research paper that details the methodology, findings, and conclusions of our project. It covers the theoretical background, the specifics of the implementation, the evaluation results, and the implications of our work.
+- `comparative-analysis-of-hybrid-recommendation-syst.ipynb`: This Jupyter Notebook contains all the code used for developing, implementing, and evaluating the hybrid recommendation models. It includes data preprocessing, model training, algorithm implementation, and performance evaluation.
+- `Comparative Analysis of Hybrid Recommendation Systems for Telugu.pdf`: A comprehensive research paper that details the methodology, findings, and conclusions of our project. It covers the theoretical background, the specifics of the implementation, the evaluation results, and the implications of our work.
 - `User_data_application`: A folder containing the Streamlit application code, along with `user_data.csv` and `user_rating.csv` files. These files are crucial for the application to function correctly and are used for comparing the performance of different recommendation systems.
 
 ## Key Features
@@ -38,7 +38,7 @@ This project is open for contributions and suggestions. Feel free to fork the re
 [MIT License](LICENSE)
 
 ## Contact
-For any queries or discussions regarding this project, feel free to contact [Your Name](your-email@example.com).
+For any queries or discussions regarding this project, feel free to contact [Abhiram Kukkapalli](kukkapalliabhiram@gmail.com).
 
 ---
 *Thank you for your interest in our project on hybrid recommendation systems for Telugu news content!*
